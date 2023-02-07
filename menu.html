@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222;
+            background-color: beige;
+        }
+
+        .main {
+            width: 1170px;
+            margin: 100px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-title h2 {
+            text-transform: capitalize;
+            font-size: 35px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section-title h2:before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #00875c;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .menus {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .menu-column {
+            width: 31%;
+        }
+
+        .menu-column h4 {
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .menu-column h4:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #00875c;
+            bottom: 0;
+        }
+
+        .single-menu {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .single-menu img {
+            border-radius: 50%;
+            max-width: 110px;
+            border: 1px dashed #ddd;
+            padding: 3px;
+            margin-right: 15px;
+            transition: .3s;
+        }
+
+        .single-menu:hover img {
+            transform: rotate(180deg);
+        }
+
+        .single-menu .menu-content h5 {
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: 500;
+            border-bottom: 1px dashed #222;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .single-menu .menu-content h5 span {
+            color: tomato;
+            float: right;
+            font-weight: 600;
+            font-style: italic;
+
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: solid black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+        }
+        fieldset{
+            width:max-content;
+            height:80;
+            padding: 5px;
+            background-color: gold;
+        }
+        font{
+         font-size:larger;
+        }
+    </style>
+    <div class="main">
+        <div class="section-title">
+            <h2>Menu</h2>
+            <p>Chef's Choice</p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Breakfast</h4>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Pizza<span>₹399</span></h5>
+                        <p>Cheesy, Paneer Peppy, Chicken BBQ</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Healthy Bowl<span>₹350</span></h5>
+                        <p>Walnut, Onion, Spinach, Cucumber</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1517093602195-b40af9688b46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c25hY2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Eat Fit<span>₹600</span></h5>
+                        <p>Almond, Grapes, Pista, Dates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>lunch</h4>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>BBQ<span>₹900</span></h5>
+                        <p>Burnt Garlic and Hot Spices</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bHVuY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Mixed Bowl<span>₹499</span></h5>
+                        <p>Tomato, Brown Bread, Cabbage, Cheese</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1601356616077-695728ae17cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Steak<span>₹490</span></h5>
+                        <p>BBQ Meat Of Choice</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>dinner</h4>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Pastry<span>₹260</span></h5>
+                        <p>Filled with goodness.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Pasta <span>₹335</span></h5>
+                        <p>Wheat Grains</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://images.unsplash.com/photo-1515516969-d4008cc6241a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="">
+                    <div class="menu-content">
+                        <h5>Manchurian Noodle <span>₹399</span></h5>
+                        <p>Veg Manchurian and Fried Noodles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+    <a href="order.html"><fieldset><font>Order Now!</font></fieldset></a><br>
+    </center>
+</body>
+
+</html>

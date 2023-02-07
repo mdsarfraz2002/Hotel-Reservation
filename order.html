@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>order</title>
+        <style>
+            body{
+                background-color: rgb(231, 228, 58);
+            }
+            h1{
+                animation: bouncing 0.5s ease 0s infinite alternate both;
+                background: darkblue;
+                border-radius: 50%;
+                display: inline-block;
+                color:white;
+                cursor: pointer;
+                font-size: 0. 75rem;
+                font-weight: 30;
+                letter-spacing: 0.2em;
+                padding: 1em 2em 1.1em;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                vertical-align: top;
+                margin-top: 100px;
+            } 
+            @keyframes bouncing {
+                0%{
+                   bottom: 0;
+                   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+                }
+                100%{
+                   bottom: 50px;
+                   box-shadow: 0 50px 50px rgba(0,0,0,0.1);
+                }
+            }
+            img{
+                transition: border-radius 1s background-color 1s,width 0.5s height 0.5s;
+                cursor: pointer;
+                padding: 5px;
+                border-radius: 50px;
+            }
+            img:hover{
+                background-color: rgb(240, 77, 8);
+                width:600px;
+                height:350px;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body><center>
+        <img src="order.jpeg" alt="Delivery">
+            <h1>YOUR ORDER HAS BEEN SUBMITTED</h1>
+        </center>
+    </body>
+</html>
